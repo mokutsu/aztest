@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
 
+const Button = styled.button`
+  font-size: 2em;
+  border-radius: 3%;
+  background-color: white;
+  color: #10aded;
+  border: 2px solid #10aded;
+  margin: 1em;
+  padding: 1em;
+`;
 class App extends Component {
   render() {
     return (
@@ -11,14 +21,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <Button>Develop</Button>
         </header>
       </div>
     );
